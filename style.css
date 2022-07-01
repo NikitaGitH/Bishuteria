@@ -1,0 +1,174 @@
+.header{
+    height: 50vw;
+    background-image: url(images/Слой1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85vw;
+    display: flex;
+    justify-content: right;
+}
+.socials{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    margin-right: 80px;
+}
+.vk{
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-image: url(images/VK.png);
+    margin-right: 20px;
+    background-size: contain;
+    
+}
+.instagramm{
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-image: url(images/222d90299104dbbd27d78b10377a6c34324.png);
+    background-size: contain;
+}
+.textarea{
+    width: 85vw;
+    height: 25vw;
+    resize: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid black;
+    color: #4f4f4f;
+    font-size: 3vw;
+}
+.textarea__decorator{
+    font-size: 3vw;
+    color: black;
+    font-weight: bold;
+}
+.textarea__submit{
+    display: flex;
+    background-color: #4f4f4f;
+    border: none;
+    margin: 20px auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 85vw;
+    height: 50px;
+}
+.sells__list{
+    display: flex;
+    margin: auto;
+    width: 85vw;
+    padding: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    justify-content: space-around;
+    position: relative;
+}
+.sells__list__item{
+    list-style: none;
+    font-weight: bold;
+    width: 20%;
+    background-position: top;
+    background-size: cover;
+}
+.sells__list__item__img{
+    width: 100%;
+}
+.text{
+    margin-top: 5px;
+    font-size: 2.5vw;
+}
+.button{
+    margin-top: 5px;
+    width: 100%;
+    background-color: #3cb044;
+    color: white;
+    font-size: 2.5vw;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.form{
+    padding: 10px;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #4f4f4f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.form__text{
+    margin: 6px 0;
+    width: 34vw;
+    height: 40px;
+    border-radius: none;
+    font-size: 18px;
+    padding: 5px 15px ;
+    box-sizing: border-box;
+    border: 1px solid #4f4f4f;
+}
+.form__title{
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.form__button{
+    display: flex;
+    width: 20vw;
+    height: 40px;
+    background-color: #3cb044;
+    color: white;
+    font-size: 2.5vw;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.sells__list::after{
+    content: "";
+    position: absolute;
+    background-image: url(images/Фигура\ 1\ копия.png);
+    background-position: center;
+    width: 20px;
+    height: 25px;
+    top: 45%;
+    left: 96%;
+}
+.sells__list::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/Фигура\ 1.png);
+    background-position: center;
+    width: 20px;
+    height: 25px;
+    top: 45%;
+    right: 96%;
+}
+@media(max-width: 400px) {
+    .socials{
+        margin-right: 0px;
+    }
+    .vk{
+        padding: 15px;
+        margin-right: 10px;
+    }
+    .instagramm{
+        padding: 15px;
+    }
+    .sells__list::after{
+        left: 90%;
+    }
+    .sells__list::before{
+        right: 90%;
+    }
+}
